@@ -58,6 +58,10 @@
 				caption_element.textContent = new_caption
 				image_element.src = `${image_dir}/${year}Graph.png`
 			}
+
+			window.onload = function () {
+				changeGraph('2019')
+			}
 		</script>
 
 	</head>
@@ -105,9 +109,8 @@
 			<button onclick="changeGraph('Both')">Both</button>
 		</div>
 		<figure>
-			<img id="graph-image" width="75%" src="./images/2019Graph.png" alt="graph image">
+			<img id="graph-image" width="75%" src="" alt="graph image">
 			<figcaption id="graph-caption">
-				Figure 1. Percent of most popular pets owned by Australians in 2019.
 			</figcaption>
 			<a href="https://animalmedicinesaustralia.org.au/wp-content/uploads/2021/08/AMAU005-PATP-Report21_v1.41_WEB.pdf">
 				Animal Medicines Australia Report
